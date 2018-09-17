@@ -1,0 +1,4 @@
+select * from (employees inner join orders
+        on employees.employeeid = orders.employeeid)
+        inner join customers
+        on customers.customerid = orders.customerid

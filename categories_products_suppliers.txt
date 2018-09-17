@@ -1,0 +1,5 @@
+select * from (categories inner join products
+        on categories.categoryid = products.categoryid)
+        inner join suppliers
+        on suppliers.supplierid = products.supplierid
+        order by products.productid

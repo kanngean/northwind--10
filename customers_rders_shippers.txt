@@ -1,0 +1,5 @@
+select * from (Customers inner join Orders
+        on Customers.CustomerID = Orders.CustomerID)
+        inner join Shippers
+        on Orders.ShipVia = Shippers.ShipperID
+        order by Customers.CustomerID

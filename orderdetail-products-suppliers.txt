@@ -1,0 +1,4 @@
+select * from (orderdetails inner join products
+        on orderdetails.productid = products.productid)
+        inner join suppliers
+        on products.supplierid = suppliers.supplierid
